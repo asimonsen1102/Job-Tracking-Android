@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24/7 Service Call Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>24/7 Service Call Tracker</h1>
+  </header>
+
+  <main>
+    <form id="callForm">
+      <input type="text" id="customer" placeholder="Customer Name" required>
+      <select id="type">
+        <option>Emergency</option>
+        <option>Maintenance</option>
+        <option>Inspection</option>
+        <option>After Hours</option>
+      </select>
+      <textarea id="notes" placeholder="Notes"></textarea>
+      <button type="submit">Add Service Call</button>
+    </form>
+
+    <h2>Active Calls</h2>
+    <ul id="callList"></ul>
+  </main>
+</body>
+</html>
